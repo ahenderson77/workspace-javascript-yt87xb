@@ -34,23 +34,12 @@
         <div class="practice">
             <h1> Varible and Arithemetic Operation</h1>
             <p> Practice on variables </p>
-
-
-        </div>
-
-        <div class="practice">
-            <h1> JavaScript Escape Sequence</h1>
-            <p> Write an image to the page </p>
-
-
-            <p> Write a table to the page </p>
-
-        </div>
-
-        <div class="practice">
-            <h1>Window and document object </h1>
-            <p> Try alert, open, location, url </p>
             <script>
+              var a = "Aaron";
+              var a = 4.5;
+              var b = 5;
+              var c = a + b;
+              document.write("c = "+c);
 
             </script>
 
@@ -58,8 +47,40 @@
         </div>
 
         <div class="practice">
+            <h1> JavaScript Escape Sequence</h1>
+            <p> Write an image to the page </p>
+            <script>
+              document.write("<img src=\"img/die1.png\">");
+            </script>
+
+
+            <p> Write a table to the page </p>
+            <script>
+              document.write("<table>");
+                document.write("<tr>");
+                  document.write("<td>first</td><td>second</td>");
+                document.write("</tr>");
+                document.write("<tr>");
+                  document.write("<td>hello</td><td>world</td>");
+                document.write("</tr>");
+              document.write("</table>");
+            </script>
+
+        </div>
+
+        <div class="practice">
+            <h1>Window and document object </h1>
+            <p> Try alert, open, location, url </p>
+            <script>
+              document.write(window.location.href);
+            </script>
+
+
+        </div>
+
+        <div class="practice">
             <h1> Get textcontent of an element </h1>
-            <p>Perform arithmetic operation on <span id="num1"> 4 </span> and <span id="num2">5 </span> </p>
+            <p>Perform arithmetic operation on <span id="n1"> 4 </span> and <span id="n2">5 </span> </p>
             <p>Result:
                 <script src="js/arith.js"></script>
             </p>
@@ -73,6 +94,11 @@
             <p id="p3"> Paragraph Number three </p>
             <p>Please write JavaScript code to change the content of each paragraph.​
             <p>
+            <script>
+             document.getElementById('p1').innerHTML="klg;asdifhj"; 
+             document.getElementById('p2').innerHTML=";vhi";
+             document.getElementById('p3').innerHTML="faceroll keyboard";  
+            </script>
 
 
         </div>
