@@ -108,9 +108,13 @@
             <p> Please enter your numbers </p>
             <script>
                 function calculate() {
-
+                    var a = parseInt(document.getElementsByName('num1')[0].value);
+                    var b = parseInt(document.getElementsByName('num2')[0].value);
+                    var c = a + b;
+                    document.getElementById('result').textContent = " "+c
 
                 }
+                
             </script>
             <p> <input type="text" name="num1" /> + <input type="text" name="num2">
                 <input type="button" value="=" onclick="calculate();">
