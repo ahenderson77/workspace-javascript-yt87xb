@@ -142,6 +142,17 @@
                     </label>
                 </p>
             </form>
+            <script>
+              // event hadler
+              function greet(){
+                // display greeting 
+              var name = document.getElementById('cName').value;
+              var outputFE = innerHTML = "welcome to JS events <b>" + name +"</b>";
+              }
+
+              var FE = document.getElementById('cName');
+              FE.addEventListener('blur', greet, false);
+            </script>
 
         </div>
 
@@ -149,9 +160,20 @@
             <h1> Practice - Calculate Square</h1>
             Calculating Square:
             <input type="text" id="num" placeholder="Type in a number"> <sup> 2 </sup> =
-            <label id="result"> ? </label>
+            <label id="result1"> ? </label>
 
         </div>
+        <script>
+          function square(){
+            var n1 = parseInt(document.getElementById('num').value);
+            var n2 = n1 *n1;
+            document.getElementById('result1').innerHTML = n2;
+
+          }
+          document.getElementById('num').addEventListener('blur', square)
+
+
+        </script>
 
         <div class="practice">
             <h1> Difference between textcontent and innerHTML</h1>
@@ -165,6 +187,13 @@
 
             <div id="message">​
             </div>
+            <script>
+
+              function convertHTML(){
+                var inputcode = document.getElementById('code').value;
+                document.getElementById('tryit').addEventListener('click', convertHTML);
+              }
+            </script>
 
 
         </div>
@@ -188,6 +217,22 @@
             </p>
 
             <script type="text/javascript">
+            function getprice(){
+              var yearCar = document.getElementById('year').value;
+              var conditionCar = document.getElementById('condition').value;
+
+              var price = 0
+              if (yearCar =="2003" && conditionCar == "Good"){
+                price = 3500;
+              }
+              else if (yearCar =="2004" && conditionCar == "Fair"){
+                price = 4500;
+              }
+              
+              document.getElementById('price').textContent = price.toString();
+            }
+            document.getElementById('year').addEventListener('change', getprice);
+            document.getElementById('condition').addEventListener('change', getprice)
 
 
 
